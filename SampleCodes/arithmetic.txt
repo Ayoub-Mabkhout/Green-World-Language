@@ -1,0 +1,28 @@
+##GWL program containing an arithmetic expression
+
+##Setting the initial qty of every element in our world
+
+qTub :: 10;
+qBlock :: 10;
+qPlant :: 10;
+qEarth :: 10; 
+
+##Setting the width, depth and height
+
+Width :: 15;
+Depth :: 15;
+Height :: 15;
+
+Main(){
+
+	Dec Integer a;
+	Dec Integer b;
+	Dec Integer c;
+	Dec Integer d;
+
+	a :: 5;
+	b :: 3; 
+	c :: 7;
+
+	d :: (a + b) * c;
+}

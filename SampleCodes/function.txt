@@ -1,0 +1,25 @@
+##GWL program that contains a function definition, call, execution and return
+
+qTub :: 10;
+qBlock :: 10;
+qPlant :: 10;
+qEarth :: 10; 
+
+##Setting the width, depth and height
+
+Width :: 15;
+Depth :: 15;
+Height :: 15;
+
+Def Integer addOne (Integer a){
+	Dec Integer b;
+	b :: a + 1;
+	Return b;
+}
+
+Main(){
+
+	Dec Integer c;
+	c :: Call addOne Takes (c);
+
+}

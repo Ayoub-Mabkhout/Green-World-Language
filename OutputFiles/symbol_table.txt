@@ -1,0 +1,51 @@
+----------- Symbol Table ------------
+
+Integer : {'category': 'type', 'scope': 'global'}
+Fraction : {'category': 'type', 'scope': 'global'}
+Void : {'category': 'type', 'scope': 'global'}
+Block : {'category': 'type', 'scope': 'global'}
+Tub : {'category': 'type', 'scope': 'global'}
+Earth : {'category': 'type', 'scope': 'global'}
+Plant : {'category': 'type', 'scope': 'global'}
+qBlock : {'category': 'variable', 'scope': 'global'}
+qTub : {'category': 'variable', 'scope': 'global'}
+qEarth : {'category': 'variable', 'scope': 'global'}
+qPlant : {'category': 'variable', 'scope': 'global'}
+Width : {'category': 'function', 'scope': 'global', 'parameters': {}}
+Depth : {'category': 'function', 'scope': 'global', 'parameters': {}}
+Height : {'category': 'function', 'scope': 'global', 'parameters': {}}
+MakeBlock : {'category': 'function', 'scope': 'global', 'parameters': {'width': 'Integer', 'depth': 'Integer'}}
+UnmakeBlock : {'category': 'function', 'scope': 'global', 'parameters': {'block': 'Block'}}
+MakeTub : {'category': 'function', 'scope': 'global', 'parameters': {'width': 'Integer', 'depth': 'Integer', 'height': 'Integer'}}
+UnmakeTub : {'category': 'function', 'scope': 'global', 'parameters': {'tub': 'Tub'}}
+PlaceBlock : {'category': 'function', 'scope': 'global', 'parameters': {'block': 'Block', 'x': 'Integer', 'y': 'Integer', 'z': 'Integer'}}
+PlaceTub : {'category': 'function', 'scope': 'global', 'parameters': {'tub': 'Tub', 'x': 'Integer', 'y': 'Integer', 'z': 'Integer'}}
+MakePlant : {'category': 'function', 'scope': 'global', 'parameters': {'size': 'Integer'}}
+UnmakePlant : {'category': 'function', 'scope': 'global', 'parameters': {'plant': 'Plant'}}
+AddEarth : {'category': 'function', 'scope': 'global', 'parameters': {'tub': 'Tub', 'quantity': 'Fraction'}}
+RemoveEarth : {'category': 'function', 'scope': 'global', 'parameters': {'tub': 'Tub', 'quantity': 'Fraction'}}
+Zre3 : {'category': 'function', 'scope': 'global', 'parameters': {'tub': 'Tub', 'plant': 'Plant'}}
+Uproot : {'category': 'function', 'scope': 'global', 'parameters': {'tub': 'Tub'}}
+$CONST : {'category': 'statement', 'scope': 'global'}
+Return : {'category': 'statement', 'scope': 'global'}
+If : {'category': 'statement', 'scope': 'global'}
+Then : {'category': 'statement', 'scope': 'global'}
+Else : {'category': 'statement', 'scope': 'global'}
+While : {'category': 'statement', 'scope': 'global'}
+Takes : {'category': 'statement', 'scope': 'global'}
+Dec : {'category': 'statement', 'scope': 'global'}
+Def : {'category': 'statement', 'scope': 'global'}
+Call : {'category': 'statement', 'scope': 'global'}
+powInteger : {'category': 'function', 'scope': 'global', 'parameters': {'base': 'Integer', 'exp': 'Integer'}}
+base : {'category': 'variable', 'scope': 'local'}
+exp : {'category': 'variable', 'scope': 'local'}
+count : {'category': 'variable', 'scope': 'local'}
+result : {'category': 'variable', 'scope': 'local'}
+powFraction : {'category': 'function', 'scope': 'global', 'parameters': {'base': 'Fraction', 'exp': 'Integer'}}
+a : {'category': 'variable', 'scope': 'global'}
+const : {'category': 'constant', 'scope': 'global'}
+dim : {'category': 'variable', 'scope': 'local'}
+cubeVolume : {'category': 'variable', 'scope': 'local'}
+count2 : {'category': 'variable', 'scope': 'local'}
+-------------------------------------
+

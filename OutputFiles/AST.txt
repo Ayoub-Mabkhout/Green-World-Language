@@ -1,0 +1,95 @@
+PRG --- :: ---- qEarth
+           ---- 3
+    --- :: ---- qPlant
+           ---- 4
+    --- Def --- Integer
+            --- Integer  base
+            --- Integer  exp
+            --- Dec --- Integer
+                    --- count
+            --- :: ---- count
+                   ---- 0
+            --- Dec --- Integer
+                    --- result
+            --- :: ---- result
+                   ---- 1
+            --- loop -- < ----- count
+                          ----- exp
+                     -- :: ---- result
+                           ---- * ----- result
+                                  ----- base
+                     -- :: ---- count
+                           ---- + ----- count
+                                  ----- 1
+            --- return  result
+    --- Def --- Fraction
+            --- Fraction  base
+            --- Integer  exp
+            --- Dec --- Integer
+                    --- count
+            --- :: ---- count
+                   ---- 0
+            --- Dec --- Fraction
+                    --- result
+            --- :: ---- result
+                   ---- :1.1
+            --- loop -- < ----- count
+                          ----- exp
+                     -- :: ---- result
+                           ---- * ----- result
+                                  ----- base
+                     -- :: ---- count
+                           ---- + ----- count
+                                  ----- 1
+            --- return  result
+    --- Dec --- Block
+            --- a
+    --- $CONST  const
+                 2
+    --- Main -- Dec --- Integer
+                    --- dim
+             -- :: ---- dim
+                   ---- 2
+             -- Dec --- Integer
+                    --- cubeVolume
+             -- :: ---- cubeVolume
+                   ---- call -- powInteger
+                             -- take -- dim
+                                     -- 3
+             -- Dec --- Integer
+                    --- count
+             -- :: ---- count
+                   ---- 0
+             -- Dec --- Integer
+                    --- count2
+             -- loop -- < ----- count
+                          ----- 3
+                     -- :: ---- count2
+                           ---- 0
+                     -- loop -- <= ---- count2
+                                   ---- count
+                             -- :: ---- qBlock
+                                   ---- cubeVolume
+                             -- :: ---- a
+                                   ---- call -- MakeBlock
+                                             -- take -- dim
+                                                     -- dim
+                             -- :: ---- Width
+                                   ---- * ----- dim
+                                          ----- count
+                             -- :: ---- Depth
+                                   ---- 0
+                             -- :: ---- Height
+                                   ---- * ----- count2
+                                          ----- dim
+                             -- call -- PlaceBlock
+                                     -- take -- a
+                                             -- Width
+                                             -- Depth
+                                             -- Height
+                             -- :: ---- count2
+                                   ---- + ----- count2
+                                          ----- 1
+                     -- :: ---- count
+                           ---- + ----- count
+                                  ----- 1

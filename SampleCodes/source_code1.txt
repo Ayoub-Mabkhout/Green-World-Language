@@ -1,0 +1,53 @@
+qEarth :: 3;
+qPlant :: 4;
+Def Integer powInteger(Integer base, Integer exp){
+	Dec Integer count;
+	count :: 0;
+	Dec Integer result;
+	result :: 1;
+	While(count < exp){
+	result :: result * base;
+	count :: count + 1;
+	}
+	Return result;
+}
+Def Fraction powFraction(Fraction base, Integer exp){
+	Dec Integer count;
+	count :: 0;
+	Dec Fraction result;
+	result :: :1.1;
+	While(count < exp){
+	result :: result * base;
+	count :: count + 1;
+	}
+	Return result;
+}
+Dec Block a;
+
+$CONST const 2
+
+## the following code generates a staircase of cubic blocks of dimension 2 
+
+Main(){
+	Dec Integer dim;
+	
+	dim :: 2;
+	Dec Integer cubeVolume;
+	cubeVolume:: Call powInteger Takes (dim,3);
+	Dec Integer count ;
+	count :: 0;
+	Dec Integer count2;
+	While(count < 3){
+		count2 :: 0;
+		While(count2 <= count){
+			qBlock :: cubeVolume;
+			a :: Call MakeBlock Takes (dim,dim);
+			Width :: dim*count;
+			Depth :: 0;
+			Height :: count2*dim;
+			Call PlaceBlock Takes (a,Width,Depth,Height);
+			count2 :: count2+1;
+		}
+		count :: count+1;
+	}
+}

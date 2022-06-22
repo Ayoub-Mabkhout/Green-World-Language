@@ -1,0 +1,35 @@
+## The following code creates a tower of blocks, given a specific height
+
+## Setting the initial quantity of every element of our world
+
+qTub :: 50;
+qBlock :: 50;
+qPlant :: 50;
+qEarth :: 50;
+
+## Setting the Width, Depth and Height of our worlds
+
+Width :: 15;
+Depth :: 15;
+Height :: 15;
+
+Main(){
+	#* Setting the Height of our tower
+	the count variable will be useful in our loops *#
+
+	Dec Integer h;
+	h :: 11;
+	Dec Integer count;
+	count:: 0;
+
+	#* Making the appropriate amount of blocks 
+	that will constitute our tower using a loop 
+	and placing them one on top of the other *#
+
+	While (count <= h){
+		Dec Block a;
+		a :: Call MakeBlock Takes(1, 1, 1);
+		Call Place Takes (a, 1, 1, count);
+		count :: count + 1;
+		}
+}

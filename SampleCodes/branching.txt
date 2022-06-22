@@ -1,0 +1,36 @@
+qTub :: 10;
+
+## GWL program containing a branching expression.
+
+## Setting the initial qty of every element in our world
+
+
+qBlock :: 10;
+qPlant :: 10;
+qEarth :: 10; 
+
+##Setting the width, depth and height
+
+Width :: 15;
+Depth :: 15;
+Height :: 15;
+
+Main(){
+
+	Dec Integer a;
+	Dec Integer b;
+
+	a :: 5;
+	a :: 6;
+
+	If(a < b) Then{
+	Dec Integer temp; 
+	temp :: a;
+	a :: b;
+	b :: temp;
+	}
+	Else{
+	a :: b;
+}
+
+}

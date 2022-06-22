@@ -1,0 +1,29 @@
+##GWL program containing a loop expression.
+##Setting the initial qty of every element in our world
+
+qTub :: 10;
+qBlock :: 10;
+qPlant :: 10;
+qEarth :: 10; 
+
+##Setting the width, depth and height
+
+Width :: 15;
+Depth :: 15;
+Height :: 15;
+
+Main(){
+
+	Dec Integer a;
+	Dec Integer b; 
+
+	a :: 0;
+	b :: 1;
+
+	While(a <= 10){
+		b :: b * 5;
+		a :: a + 1;
+	}
+
+
+}

@@ -1,0 +1,10 @@
+qBlock :: 750;
+Dec Integer a;
+$CONST something 0
+
+
+Main(){
+
+	a :: 8;
+	qEarth :: 2;
+}
